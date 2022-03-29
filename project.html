@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ject.css" />
+    <title>LEVEL 9 PROJECT</title>
+    <script src="https://kit.fontawesome.com/625b024633.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 id="hed"><b>MY PORTFOLIO</b></h1>
+        <ul>
+          <li><a href="#">FOLLOW ME</a></li>
+          <li><a href="#contact-me">CONTACT ME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#portfolio">EDUCATION</a></li>
+          <li><a href="#">HOME </a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="in">
+      <div class="left">
+        <img src="w.png" />
+      </div>
+      <div class="right">
+        <h5>HI THERE &nbsp I'M</h5>
+        <h1><b>JOEL HENRY</b></h1>
+        <h3 style="color: #03aeba">WEB DEVELOPER&nbsp X &nbspSTUDENT</h3>
+        <h6>I'M A PART OF THE FULLSTACK PROGRAM</h6>
+      </div>
+    </div>
+  </div>
+  <h1 class="center" >EDUCATION</h1>
+  <div class="tab" id="portfolio">
+    <button class="tablinks" onclick="openCity(event, 'London')">SCHOOL</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">INTERMEDIATE</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">BTECH</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="London" class="tabcontent">
+    <h3>SCHOOL</h3>
+    <p>A school is an educational institution designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers.
+      school plays a major role for any person .I enjoyed a lot in my school and still i wish to go back to that precious and memorable days
+      I have completed my schooling in aditya english medium school here in my home town bhimavaram.
+      
+    </p>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+      <h3>INTERMEDIATE</h3>
+      <p>intemediate is the turning point for everyone and for me also we enjoyed a lot in our intermediate and learned pretty much mathmatics and science but doesn't understand a littlebit I studied my inter in srichaitanya junior college in bhimavaram</p>
+    </div>
+    
+    <div id="Tokyo" class="tabcontent">
+      <h3>BTECH</h3>
+      <p>Btech is the last phase of education for many people .Luckily I got placed in a wonderful college vishnu institute of technology which was locted  in bhimavaram</p>
+    </div>
+    <div id="about">
+      <h1 class="center">ABOUT</h1>
+      <div class="content">
+        <p>   My Name is <strong> Joel Henry</strong><br> and I am From Bhimavaram<br>
+          currently studying btech in vishnu insttute of technology bhimavarm.<br />
+          I am Very much Intrested in coding.<br> This is my capstone project website with
+          html,css.<br />
+          my hobbies are playing esports,watching anime.<br>
+          Thanks to<bold> Full Stack devlepment</bold> course<br> It helped me learn
+          new things like html,css,js which are the basics of the web development.
+          <br />
+          I am very exicted to learn new things <strong>THANK YOU</strong>
+        </p>      
+      </div>
+      <div>
+        <img src="bunny.jpeg" alt="" class="user">
+      </div>
+      </div>
+      <div id="contact-me">
+
+        <h1 class="center1">CONTACT ME</h1>
+        <form action="backend.php">
+          <div>
+            <label for="name"><b> NAME:</b></label>
+            <input type="text" id="name" placeholder="Enter Your Name" />
+            <br />
+          </div>
+          <div>
+            <label for="email"><b> EMAIL ADDRESS :</b></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Email Address"
+            />
+            <br />
+          </div>
+          <div>
+            <label for="number"><b> PHONE NUMBER :</b></label>
+            <input type="tel" id="number" placeholder="Enter Your Phone Number" />
+            <br />
+          </div>
+          <div>
+            <label for="msg"><b> MESSAGE : </b></label>
+            <textarea
+              id="msg"
+              name="myText"
+              cols="50"
+              rows="20"
+              placeholder="Type a message...."
+            ></textarea>
+          </div>
+          <button class="btn">Send</button>
+        </form>
+      </div>
+    
+      </div >
+      <footer class="foot">
+        <h1>Thank You For Visting Our Website</h1>
+        THIS IS MY GAME PROJECT<a href="https://yjoelhenry7.github.io/Martial-Arts/">LINK</a>
+        <div >
+          <ul>
+            <h4>LOCATION:</h4>
+            <li>BHIMAVARAM</li>
+            <li>534207</li>
+            <li>Andhra Pradesh,India.</li>
+          </ul>
+          <ul>
+            <h4>Follow us :</h4>
+            <li><a href="#" ><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-github fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
+          </ul>
+        </div>
+        <p style="opacity: .4;">&copy; CopyRight All rights Reserverd</p>
+      </footer>
+      
+    <script>
+      
+    function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+  
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  </script>
+
+  </body>
+</html>
